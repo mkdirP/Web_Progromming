@@ -1,0 +1,184 @@
+body {
+    background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    font-family: "Lucida Sans Unicode", sans-serif;
+    margin: 0;
+}
+
+#body-table {
+    width: 100%;
+    cellpadding: 0;
+    cellspacing: 0;
+    overflow: hidden;
+}
+
+.choose-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25px;
+    margin: 50px 100px 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 30px 5px #ffffff;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.checkbox-area {
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+#ttl {
+    width: 300px
+}
+
+#graph-and-ttl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#graph_pic {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.table-area {
+    display: flex;
+    justify-content: center;
+}
+
+#coordinates-form > div {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+
+#main-table {
+    border-collapse: collapse;
+    overflow: hidden;
+    width: 600px;
+    box-shadow: 0 0 20px 5px #ffffff;
+    margin: 10px 10px 30px;
+    background-image: linear-gradient(to right top, #7e82e5, #d47ec7, #f78ca3, #faa98e, #ebc995);
+    border-radius: 20px;
+}
+
+#main-table th {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+}
+
+#main-table td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+}
+#col1{
+    border-top-left-radius: 20px;
+}
+#col4{
+    border-top-right-radius: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+tbody > tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+tbody > td {
+    position: relative;
+}
+
+.ordinary-btn, .ordinary-btn-R {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 1px 30px;
+    width: 40px;
+    height: 30px;
+}
+
+.ordinary-btn-selected, .ordinary-btn-selected-R {
+    background-color: #c777b9;
+    display: inline-block;
+    text-transform: uppercase;
+    color: black;
+    margin: 1px 30px;
+    width: 40px;
+    height: 30px;
+}
+
+#yField {
+    width: 200px;
+    height: 30px;
+    text-indent: 5px;
+}
+
+caption {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: "Lucida Sans Unicode", sans-serif;
+    text-transform: uppercase;
+}
+
+#ttl {
+    font-size: 12px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#ttlInput {
+    margin-top: 10px;
+}
+
+.gradient-button {
+    padding: 10px 10px;
+    margin: 10px 20px;
+    border: 2px solid #422800;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 18px;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.gradient-button:hover {
+    background-color: #fff;
+}
+
+.gradient-button:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .gradient-button {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}

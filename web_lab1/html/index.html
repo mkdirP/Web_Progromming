@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LAB1</title>
+    <link rel="stylesheet" href="../css/table.css">
+    <script src="../JavaScript/CheckRequired.js"></script>
+    <script src="../JavaScript/Update.js"></script>
+    <script src="../JavaScript/Valide.js"></script>
+    <script src="../JavaScript/Clear.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<!--abel标签的使用使得选择框和文字成为一个整体，点击文字即可完成选择。-->
+<table id="header" style="width:100%">
+    <tr>
+        <th>Wang Mingzhi <br>Group: P32151<br>[Variant: 1503]</th>
+    </tr>
+</table>
+
+<table id="content" style="width:100%">
+    <tr id="info" >
+            <th >Вариант</th>
+            <th >Координаты</th>
+            <th >Результаты</th>
+    </tr>
+    <tr id="tr02">
+        <td id="Option">
+<!--            <h2>Вариант</h2>-->
+            <img id="Graph" class="bordered" src="../task.png" alt="Resource not found">
+        </td>
+        <td id="Coordinates">
+<!--            <h2>Координаты</h2>-->
+            <form class="validate_form" novalidate name="simpleForm" onsubmit="update(); return false;">
+                <div class="input">
+                    <div class="choice1">
+                        <p>
+                            Выберите значение X:<br>
+                            <label><input class='acb' type="checkbox" value="-3" name="x_values" required onclick='deRequireCb("acb")' checked>-3<br></label>
+                            <label><input class='acb' type="checkbox" value="-2" name="x_values" required onclick='deRequireCb("acb")'>-2<br></label>
+                            <label><input class='acb' type="checkbox" value="-1" name="x_values" required onclick='deRequireCb("acb")'>-1<br></label>
+                            <label><input class='acb' type="checkbox" value="0" name="x_values" required onclick='deRequireCb("acb")'>0<br></label>
+                            <label><input class='acb' type="checkbox" value="1" name="x_values" required onclick='deRequireCb("acb")'>1<br></label>
+                            <label><input class='acb' type="checkbox" value="2" name="x_values" required onclick='deRequireCb("acb")'>2<br></label>
+                            <label><input class='acb' type="checkbox" value="3" name="x_values" required onclick='deRequireCb("acb")'>3<br></label>
+                            <label><input class='acb' type="checkbox" value="4" name="x_values" required onclick='deRequireCb("acb")'>4<br></label>
+                            <label><input class='acb' type="checkbox" value="5" name="x_values" required onclick='deRequireCb("acb")'>5<br></label>
+                            <span class="error"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="text">
+                        <p>
+                            Введите значение Y:<br>
+                            <label for="Y"></label>
+                            <input id="Y" type="text" name="Y"  oninput="validateTextField()" placeholder="Значение от -3 до 3" required>
+                            <span class="error"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="select">
+                        <p>
+                            Выберите значение R:<br>
+                            <label><input type="radio" value="1" name="r_values" required checked>1<br></label>
+                            <label><input type="radio" value="1.5" name="r_values" required>1.5<br></label>
+                            <label><input type="radio" value="2" name="r_values" required>2<br></label>
+                            <label><input type="radio" value="2.5" name="r_values" required>2.5<br></label>
+                            <label><input type="radio" value="3" name="r_values" required>3<br></label>
+
+                            <span class="error"></span>
+                        </p>
+                    </div>
+                    <section id="validationInfo" class="validationInfo">
+
+                    </section>
+                    <input type="submit" class="button" value='Submit'/>
+
+                    <p></p>
+                </div>
+
+            </form>
+
+        </td>
+        <td id="td03">
+            <div id="results_table_container">
+                <input type="submit" class="button" id="clear-btn" value='Reset table'
+                       onclick="clearTable(); changeButtonOnClick('clear-btn')"/>
+                <table id="table" >
+                    <tr id="results_name">
+                        <th>X</th>
+                        <th>Y</th>
+                        <th>R</th>
+                        <th>Время текущее</th>
+                        <th>Время работы script</th>
+                        <th>Результат</th>
+                    </tr>
+                </table>
+            </div>
+        </td>
+
+    </tr>
+
+</table>
+<footer>
+<!--    <img src="../slam.jpg" width="100%" height="85px">-->
+<!--    <tr>-->
+<!--        &lt;!&ndash;        /*colspan="3"设置当前单元格横跨的列数*/&ndash;&gt;-->
+<!--        <th class="boots" colspan="3" height="30px">Web_Lab1 </th>-->
+<!--    </tr>-->
+    <div>
+        <p>Web_Lab1</p>
+    </div>
+</footer>
+
+
+
+
+</body>
+</html>

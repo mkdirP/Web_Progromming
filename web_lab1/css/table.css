@@ -1,0 +1,92 @@
+/*
+    #id     id选择器
+
+*/
+body{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100%;
+    background-color: #fff5e4;
+}
+/*伪元素选择器*/
+::selection{
+    color: #da7f8f;
+    background-color: #fcd8d4;
+}
+
+#Option{
+    width: 30%;
+}
+
+#Coordinates{
+    width: 20%;
+}
+
+#Results{
+    width: 50%;
+}
+#results_table_container{
+    margin-top: 0%;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;/*如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。*/
+    /*border-collapse: collapse;*/
+
+}
+#results_table{
+    width: 100%;
+    padding: 0;
+    border-collapse: collapse;
+}
+#content{
+    /*height: 100px;*/
+    background-color: #ffe3e1;
+    border-radius: 10px;
+}
+#header{
+    font-size: 17px;
+    background-color: #fcd8d4;
+    /*"Brush Script MT"*/
+    font-family: "Lucida Handwriting", cursive;
+    color: #da7f8f;
+}
+.boots{
+    font-size: 110%;
+    background-color: #fcd8d4;
+}
+/*子选择器*/
+body>table{
+    /*margin: 5px;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
+    height: 95%;
+}
+/*后代选择器*/
+div p{
+    font-family: "Times New Roman", Times, serif;
+}
+footer>div>p{
+    color: #da7f8f;
+    background-color: #fcd8d4;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    font-family: "Lucida Handwriting", cursive;
+}
+#info{
+    background-color: #ff9494;
+    border-radius: 10px;
+    /*color: #ff9494;*/
+}
+#validationInfo{
+    color: red;
+}
+#table{
+    width: 100%;
+}
+#td03{
+    background-color: #ffd1d1;
+    border-radius: 10px;
+}

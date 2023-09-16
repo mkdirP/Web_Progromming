@@ -1,0 +1,19 @@
+#head{
+    width: 100%;
+    font-size: 17px;
+    background-color: #fcd8d4;
+    /*"Brush Script MT"*/
+    text-align: center;
+    font-family: "Lucida Handwriting", cursive;
+    color: #da7f8f;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    color: #da7f8f;
+    background-color: #fcd8d4;
+    width: 100%;
+    font-family: "Lucida Handwriting", cursive;
+}

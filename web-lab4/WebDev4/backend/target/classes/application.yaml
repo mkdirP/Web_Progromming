@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/studs
+    username: postgres
+    password: s336262
+  jpa:
+    open-in-view: false
+server:
+  port: 8083

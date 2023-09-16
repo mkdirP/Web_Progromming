@@ -1,0 +1,17 @@
+.header{
+    /*background: #ba83ca;*/
+    height: 70px;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    box-shadow: 0 0 37px 28px #ffffff;
+    position: relative
+}
+
+.header p {
+    color: whitesmoke;
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 18px;
+    line-height: 15px;
+    margin: 15px 15px;
+}
