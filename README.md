@@ -1,2 +1,2 @@
 # web
-2-y/2-sem/web
+2-year/2-sem/web
